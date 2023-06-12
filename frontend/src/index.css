@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Poppins:wght@200&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --error: #e7195a;
+}
+
+/*Nav bar*/
+
+nav {
+  align-items: center;
+}
+
+nav a{
+  margin-left: 10px;
+}
+
+.navcontainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vh;
+  align-items: center;
+  margin: 0% 5%;
+}
+
+.companyLogo{
+  display: flex;
+  align-items: center;
+}
+
+.companyLogo img{
+  height: 5vh;
+}
+
+header{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 139, 0.1);
+}
+
+.logedinEmail{
+  padding: 0px 20px;
+}
+
+.logoutBtn{
+  margin: 0px 20px;
+  border:none;
+  background-color: #fff;
+}
+
+.logoutIcon{
+  height: 2.5vh;
+  padding-right: 1.5vw;
+}
+
+.createUserBtn{
+  border:none;
+  background: #1e99ca;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.link h1{
+  font-size: 2.2vh;
+  color: #1e99ca;
+}
+
+@media only screen and (max-width: 1080px) {
+  .link h1{
+    font-size: 1.8vh;
+  }
+
+  .navcontainer{
+    margin: 0% 1%;
+  }
+
+  .createUserBtn{
+    padding: 5px 10px;
+  }
+
+  .logoutBtn{
+    margin: 0px 0px 0px 15px;
+  }
+  
+  .logoutIcon{
+    height: 2.2vh;
+  }
+}
+
+/*view all employee details start*/
+
+.employees{
+  width: 100%;
+}
+
+.homeHeader{
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 5% 1% 6%;
+}
+
+.homeHeader h1{
+  font-size: 2.5vh;
+}
+
+.searchNewUserBtn{
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1e99ca;
+  align-items: center;
+  display: flex;
+  
+}
+
+.createNewUserBtn{
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1e99ca;
+  align-items: center;
+  display: flex;
+  margin-left: 1vh;
+}
+.te{
+  display: flex;
+}
+
+.createNewUserBtn:hover{
+  cursor: pointer;
+}
+
+.createNewUserBtnIcon,
+.searchUserBtnIcon{
+  height: 2vh;
+  padding-right: 0.6vw;
+}
+
+#employee-details-container{
+  background-color: #1e99ca;
+  padding: 1.5vh;
+  margin-bottom: 1%;
+}
+
+#employee-details-details{
+  padding-top: 1vh;
+  padding-bottom:1vh;
+}
+
+.employee-details{
+  display: flex;
+  justify-content: center;
+  margin: 0% 5% 0% 5%;
+  font-size: 1.75vh;
+}
+
+p{
+  width: 200px;
+}
+
+.actionIcon{
+  height: 2vh;
+  padding-right: 1.5vw;
+}
+
+.actionIcon:hover{
+  cursor: pointer;
+}
+
+.employee-details:hover{
+  background-color: #f9f9f9;
+}
+
+@media only screen and (max-width: 1080px) {
+  .employee-details{
+    margin: 0% 1% 0% 2%;
+    font-size: 1.5vh;
+  }
+}
+
+/*view all employee details end*/
+
+/*Style for create New Employee Page*/
+.createEmployee{
+  margin-top: 5%;
+  font-size: 2vh;
+  margin: 5vh auto;
+  padding: 5vh;
+  background: rgba(255, 255, 255, 0.562);
+  border-radius: 4px;
+}
+
+.addNewEmployeeTitle{
+  padding-bottom: 5%;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.createEmployeeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label{
+  padding-top: 10px;
+}
+
+input{
+  margin: 1vh 0vh 2vh 0vh;
+  height: 3.5vh;
+  width: 25vw;
+  border: 1px solid;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+
+input:focus{
+  outline:none;
+}
+
+.createNewEmployeeBtn{
+  margin: 3vh 0vh 1vh 0vh;
+  height: 4vh;
+  width: 12vw;
+  background: #1e99ca;
+  box-shadow: 0px 2px 2px rgba(0, 0, 139, 0.1);
+  border: none;
+  font-size: 2vh;
+  color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cancelCreateNewEmployeeBtn{
+  margin: 3vh 0vh 1vh 0vh;
+  height: 4vh;
+  width: 12vw;
+  background: #b31a1ab9;
+  box-shadow: 0px 2px 2px rgba(0, 0, 139, 0.1);
+  border: none;
+  font-size: 2vh;
+  color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.createNewEmployeeBtn, .cancelCreateNewEmployeeBtn:hover{
+  cursor: pointer;
+}
+
+.createEmployeeButtonContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1080px) {
+  .createEmployee{
+    margin-top: 12%;
+  }
+
+  input{
+    width: 50vw;
+  }
+
+  .createNewEmployeeBtn{
+    width: 25vw;
+  }
+  
+  .cancelCreateNewEmployeeBtn{
+    width: 25vw;
+  }
+}
+/*Style for create New Employee Page end*/
+
+/*Delete Employee popup*/
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-dialog {
+  width: 30vw;
+  height: 22vh;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  outline: none;
+}
+
+.deleteEmployeePopupTitle{
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.5em;
+}
+
+.deleteEmployeeConformation{
+  text-align: center;
+  width: 100%;
+  padding-top:10px;
+}
+
+.popup-dialog p {
+  margin-bottom: 20px;
+}
+
+.popup-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 0%;
+}
+
+.popup-buttons button {
+  margin: 2vh;
+  padding: 1vh 2vw;
+  width: 10vw;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0.1, 0.4, 0.1);
+}
+
+.deleteCancelBtn{
+  background: #FFFFFF;
+  border: 1px solid #898989;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.deleteEmployeeBtn{
+background: #b31a1ab9;
+color: #FFFFFF;
+}
+
+
+.employee-details {
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1080px) {
+  .popup-dialog {
+    width: 50vw;
+  }
+
+  .popup-buttons button {
+    width: 20vw;
+  }
+}
+/*Delete Employee Popup end*/
+
+input.error{
+  border:1px solid var(--error);
+}
+
+
+/*login page style*/
+
+form.signup, form.login {
+  width: 320px;
+  margin: 15vh auto;
+  padding: 5vh;
+  background: rgba(255, 255, 255, 0.562);
+  box-shadow: 0px 4px 4px rgba(0, 0.1, 0.4, 0.1);
+  border-radius: 4px;
+}
+
+.loginContainer,
+.signupContainer{
+  font-size: 2vh;
+}
+
+.keyGif{
+  height: 10vh;
+  margin-left: 40%;
+}
+
+.loginTitle,
+.signupTitle{
+  text-align: center;
+  font-size: 3vh;
+  margin-bottom: 3vh;
+}
+
+.loginEmail,
+.loginPassword,
+.signupEmail,
+.signupPassword{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 3vh;
+}
+
+.loginBtn,
+.signupBtn{
+  width: 312px;
+  height: 40px;
+  border:none;
+  margin-top: 2%;
+  background: #1e99ca;
+  box-shadow: 0px 2px 2px rgba(0, 0, 139, 0.1);
+}
+
+@media only screen and (max-width: 1080px) {
+  form.signup, form.login {
+    max-width: 300px;
+    margin: 15vh auto;
+    padding: 5vh;
+  }
+  
+  .loginContainer{
+    font-size: 2vh;
+  }
+  
+  .loginEmail,
+  .loginPassword{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 3vh;
+  }
+  
+  .loginBtn{
+    width: 312px;
+    height: 40px;
+  }
+  
+}
+
+/*edit employee popup*/
+.edit-popup-dialog{
+  width: 20vw;
+  height: 60vh;
+  background-color: #fff;
+  padding: 10vh;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  outline: none;
+}
+
+.editConatinerBtn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.editPopupSaveBtn,
+.editPopupCancelBtn{
+  margin: 1vh;
+  width: 12vw;
+  height: 4vh;
+  border-radius: 6px;
+  border:none;
+}
+
+.editPopupSaveBtn{
+  background: #1e99ca;
+}
+
+@media only screen and (max-width: 1080px) {
+  .edit-popup-dialog{
+    width: 50vw;
+    height: 60vh;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+  }
+
+  .editPopupSaveBtn,
+  .editPopupCancelBtn{
+    width: 25vw;
+  }
+
+}
+
+/*edit employee popup end*/
